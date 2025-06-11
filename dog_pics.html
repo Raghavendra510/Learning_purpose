@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            /* Make the body a flex container */
+           
+            /* Horizontally center items */
+            align-items: center;
+            /* Vertically center items */
+            min-height: 100vh;
+            /* Ensure body takes full viewport height for vertical centering */
+            flex-direction: column;
+            /* Stack items vertically */
+            margin: 0;
+            /* Remove default body margin */
+            gap: 20px;
+            /* Add some space between the button and the image */
+            background: #4c4c4c;
+        }
+        #generate{
+            margin-top: 60px;
+            height: 50px;
+            width: 200px;
+            font-size: large;
+            background: #ff7700;
+            border-radius:10px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        #generate:hover{
+            cursor: pointer;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        #dog{
+            margin-top: 50px;
+            
+        }
+        .marq{
+            height: 40px;
+       
+        }
+        .info{
+            margin-top: 0px;
+            align-items: center;
+            color: rgb(246, 246, 245);
+         
+        }
+        
+        /* The #generate and #dog elements will automatically be centered
+           due to the flexbox properties on the body. */
+    </style>
+</head>
+<script src="doggie.js"></script>
+
+<body>
+    <marquee class="marq" bgcolor="Green" 
+                 direction="left" loop="" scrollamount="15" behavior="alternate">
+            <div class="info">
+                <h3>Random Dog Pics.</h3>
+            </div>
+           
+        </marquee>
+    <button id="generate">click me for free dog pic</button>
+    <img id="dog" style="height: 400px; width: 400px;" src="https://www.shutterstock.com/image-vector/vector-black-silhouette-dog-isolated-260nw-563030956.jpg">
+</body>
+
+</html>
